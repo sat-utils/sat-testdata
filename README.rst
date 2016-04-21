@@ -1,4 +1,5 @@
-# sat-testdata
+sat-testdata
+============
 
 A repository of satellite testdata for use in testing.  Currently includes samples for
 
@@ -6,9 +7,11 @@ A repository of satellite testdata for use in testing.  Currently includes sampl
 - sentinel2
 
 
-### Example
+Example
++++++++
 
-```python
+
+.. code:: python
 
 >>> import pprint
 >>> from stestdata import TestData
@@ -55,4 +58,3 @@ A repository of satellite testdata for use in testing.  Currently includes sampl
                                     'filename': 'test_BQA.tif',
                                     'path': '/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_BQA.tif'}}}
 
-```
