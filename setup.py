@@ -7,6 +7,10 @@ import imp
 here = os.path.abspath(os.path.dirname(__file__))
 __version__ = imp.load_source('stestdata.version', 'stestdata/version.py').__version__
 
+# Get the long description from the README file
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
+
 # get the dependencies and installs
 with open(os.path.join(here, 'requirements.txt'), encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
@@ -19,6 +23,7 @@ setup(
     version=__version__,
     author='Alireza J (scisco), Matthew Hanson (matthewhanson)',
     description='Variety of remote sensing data for testing',
+    long_description=long_description,
     url='https://github.com/sat-utils/sat-testdata',
     license='CC0',
     classifiers=[
