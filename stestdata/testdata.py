@@ -69,7 +69,7 @@ class TestData(object):
             self.examples[example] = self.list
 
             # fill in filenames and path
-            files = glob.glob(os.path.join(self.path, sensor, example, '*.tif'))
+            files = glob.glob(os.path.join(self.path, sensor, example, '*.*'))
             for f in files:
                 search = re.search('(B.{1,3})\.', f)
                 if search:
