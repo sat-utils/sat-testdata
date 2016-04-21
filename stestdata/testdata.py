@@ -5,7 +5,7 @@ import glob
 
 class TestData(object):
 
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'samples'))
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 
     def __init__(self, sensor):
         """ Initialize testdata for a sensor """
