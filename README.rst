@@ -3,21 +3,21 @@ sat-testdata
 
 A repository of satellite testdata for use in testing.  Currently includes samples for
 
-- landsat8
-- sentinel2
+    - landsat8
+    - sentinel2
 
 
 Example
 +++++++
 
 
-.. code:: python
+.. code-block:: python
 
->>> import pprint
->>> from stestdata import TestData
->>> t = TestData('landsat8')
->>> pprint.pprint(t.examples)
-{'small_full_data_cloudy': {'B1': {'band_name': 'B1',
+    >>> import pprint
+    >>> from stestdata import TestData
+    >>> t = TestData('landsat8')
+    >>> pprint.pprint(t.examples)
+    {'small_full_data_cloudy': {'B1': {'band_name': 'B1',
                                    'band_type': 'coastal',
                                    'filename': 'test_B1.tif',
                                    'path': '/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B1.tif'},
