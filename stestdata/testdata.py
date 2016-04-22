@@ -65,8 +65,10 @@ class TestData(object):
 
         # generate examples skeleton
         self.examples = {}
+        self.filename_bands = {}
         for example in examples:
             self.examples[example] = self.list
+            self.filename_bands[example] = {}
 
             # fill in filenames and path
             files = glob.glob(os.path.join(self.path, sensor, example, '*.*'))
@@ -77,8 +79,9 @@ class TestData(object):
                     if band in self.examples[example]:
                         self.examples[example][band]['path'] = f
                         self.examples[example][band]['filename'] = os.path.basename(f)
+                        self.filename_bands[example][f] = [self.examples[example][band]['band_type']]
 
-        self.example_names = examples
+        self.names = examples
 
     @classmethod
     def is_dir(cls, path):
