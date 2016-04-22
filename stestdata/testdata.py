@@ -78,6 +78,8 @@ class TestData(object):
                         self.examples[example][band]['path'] = f
                         self.examples[example][band]['filename'] = os.path.basename(f)
 
+        self.example_names = examples
+
     @classmethod
     def is_dir(cls, path):
         return os.path.isdir(os.path.join(cls.path, path))
