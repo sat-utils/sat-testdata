@@ -69,7 +69,7 @@ class TestData(object):
         self.files = {}
         for example in examples:
             self.examples[example] = self.list
-            self.filename_bands[example] = {}
+            self.files_bands[example] = {}
             self.files[example] = []
 
             # fill in filenames and path
