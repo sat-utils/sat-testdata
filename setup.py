@@ -22,6 +22,7 @@ setup(
     name='stestdata',
     version=__version__,
     author='Alireza J (scisco), Matthew Hanson (matthewhanson)',
+    author_email='alireza@developmentseed.org',
     description='Variety of remote sensing data for testing',
     long_description=long_description,
     url='https://github.com/sat-utils/sat-testdata',
