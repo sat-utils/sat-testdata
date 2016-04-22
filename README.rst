@@ -1,6 +1,9 @@
 sat-testdata
 ============
 
+.. image:: https://travis-ci.org/sat-utils/sat-testdata.svg?branch=develop
+    :target: https://travis-ci.org/sat-utils/sat-testdata
+
 A repository of satellite testdata for use in testing.  Currently includes samples for
 
 - landsat8
@@ -16,6 +19,8 @@ Example
     >>> import pprint
     >>> from stestdata import TestData
     >>> t = TestData('landsat8')
+    >>> t.names
+    ['small_full_data_cloudy']
     >>> pprint.pprint(t.examples)
     {'small_full_data_cloudy': {'B1': {'band_name': 'B1',
                                    'band_type': 'coastal',
@@ -57,4 +62,8 @@ Example
                                     'band_type': 'quality',
                                     'filename': 'test_BQA.tif',
                                     'path': '/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_BQA.tif'}}}
+    >>> t.files_bands
+    {'small_full_data_cloudy': {'/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B6.tif': ['swir1'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B8.tif': ['pan'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B1.tif': ['coastal'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B9.tif': ['cirrus'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B2.tif': ['blue'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B4.tif': ['red'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_BQA.tif': ['quality'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B3.tif': ['green'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B5.tif': ['nir'], '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B7.tif': ['swir2']}}
+    >>> t.files
+    {'small_full_data_cloudy': ['/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B1.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B2.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B3.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B4.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B5.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B6.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B7.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B8.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B9.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_BQA.tif']}
 
