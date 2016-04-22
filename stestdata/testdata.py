@@ -67,10 +67,12 @@ class TestData(object):
         self.examples = {}
         self.files_bands = {}
         self.files = {}
+        self.bands = {}
         for example in examples:
             self.examples[example] = self.list
             self.files_bands[example] = {}
             self.files[example] = []
+            self.bands[example] = []
 
             # fill in filenames and path
             files = glob.glob(os.path.join(self.path, sensor, example, '*.*'))
@@ -83,6 +85,7 @@ class TestData(object):
                         self.examples[example][band]['filename'] = os.path.basename(f)
                         self.files_bands[example][f] = [self.examples[example][band]['band_type']]
                         self.files[example].append(f)
+                        self.bands[example].append(self.examples[example][band]['band_type'])
 
         self.names = examples
 
