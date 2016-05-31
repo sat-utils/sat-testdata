@@ -26,7 +26,7 @@ setup(
     description='Variety of remote sensing data for testing',
     long_description=long_description,
     url='https://github.com/sat-utils/sat-testdata',
-    license='CC0',
+    license='MIT',
     classifiers=[
         'Framework :: Pytest',
         'Topic :: Scientific/Engineering :: GIS',
