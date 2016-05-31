@@ -67,3 +67,8 @@ Example
     >>> t.files
     {'small_full_data_cloudy': ['/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B1.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B2.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B3.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B4.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B5.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B6.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B7.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B8.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_B9.tif', '/Users/ajdevseed/lib/repos/sat/sat-testdata/stestdata/data/landsat8/small_full_data_cloudy/test_BQA.tif']}
 
+About
++++++++
+Sat Testdata was made by `Development Seed <http://developmentseed.org>`_. The tool is available under a `MIT license </LICENSE>`_.
+
+The data in this repository is available under a `CC0 <http://creativecommons.org/publicdomain/zero/1.0/>`_ license and contains `Copernicus Sentinel data <https://scihub.copernicus.eu/>`_ and Landsat data from the `US Geological Survey <http://landsat.usgs.gov/>`_.
