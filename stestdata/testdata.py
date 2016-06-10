@@ -6,19 +6,24 @@ from copy import copy
 from six import iteritems
 
 
+def sensors():
+    """ Get list of sensors available """
+    dirs = glob.glob(os.path.join(os.path.dirname(__file__), 'data', '*'))
+    return sorted([os.path.basename(s) for s in dirs if os.path.isdir(s)])
+
+
 class TestDataErrors(Exception):
     pass
 
 
 class TestData(object):
 
-    sensors = ['landsat8', 'sentinel2']
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
 
     def __init__(self, sensor):
         """ Initialize testdata for a sensor """
 
-        if sensor in self.sensors:
+        if sensor in sensors():
             self.sensor = sensor
         else:
             raise TestDataErrors('Sensor is not supported')
